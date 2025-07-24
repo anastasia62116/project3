@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Сайт</title>
+        <link rel="stylesheet" href="main.css"></link>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Форма регистрации на мероприятие</h1>
+            <form onsubmit="alert('Сохранение'); console.log('Данные сохранены')">
+                <div>
+                    <label for="habit-name">ФИО участника</label>
+                    <input id="habit-name" name="habit-name" type="text" required></input>
+                </div>
+            <br/>
+                <div>
+                    <label for="description">Описание проекта</label> 
+                    <textarea id="description" type="text" required></textarea>
+                </div>
+            <br/>
+                <div>
+                    <label for="frequency">Выберите день, в который можете принять участие</label>
+                    <select id="frequency">
+                        <option value="1">01.09.2025</option>
+                        <option value="2">02.09.2025</option>
+                        <option value="3">03.09.2025</option>
+                </select></div><br/>
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+        <script src="main.js">
+            </script>
+    </body>
+</html>
