@@ -1,3 +1,4 @@
+<!--
 <script setup>
 import HabitForm from './components/HabitForm.vue'
 </script>
@@ -22,11 +23,13 @@ import HabitForm from './components/HabitForm.vue'
 </style>
 
 ИЛИ           ИЛИ           ИЛИ           ИЛИ           ИЛИ           ИЛИ           ИЛИ 
+-->
 
 <script setup>
 import { ref } from 'vue';
 import HabitForm from './components/HabitForm.vue'
-import HabitList from './components/HabitList.vue';
+import HabitList from './components/HabitList.vue'
+import HabitListItem from './components/HabitListItem.vue'
 
 const currentHabit = ref();
 </script>

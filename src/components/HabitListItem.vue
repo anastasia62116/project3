@@ -18,14 +18,15 @@ const emit =defineEmits({
     <div v-text="item.count"></div>
     <p>
         <template v-if="item.frequency === 1"> 
-            Каждый день 
+            01.09.2025 
         </template>
-        <template v-else-if="item.frequency === 7"> 
-            Раз в неделю 
+        <template v-else-if="item.frequency === 2"> 
+            02.09.2025 
         </template>
-        <template v-else-if="item.frequency === 30">
-            Ежемесячно
+        <template v-else-if="item.frequency === 3">
+            03.09.2025
         </template>
+
     </p>
         <button @click.stop="$emit('click:delete')"> Удалить 
         </button>

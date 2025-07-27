@@ -48,6 +48,7 @@ const countMeta = {
 }
 const metaData = [nameMeta, descriptionMeta, frequencyMeta, countMeta];
 
+/*
 for(const meta of metaData){
     if (meta.select && meta.select.tagName.toLowerCase() === "select"){
         meta.select.addEventListener('change', meta.handler);
@@ -56,6 +57,18 @@ for(const meta of metaData){
         meta.select.addEventListener('input', meta.handler);  
     }
 }
+*/
+/**/
+for(const meta of metaData){
+    if(meta.select.tagName.toLowerCase() 
+        == "select".toLowerCase()){
+        meta.select.addEventListener('change', meta.handler);
+    }
+    else{
+        meta.select.addEventListener('input', meta.handler);  
+    }
+}
+/**/
 
 const sumElement = document.querySelector('#sum');
 
