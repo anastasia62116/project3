@@ -7,13 +7,13 @@ const habitList = reactive([
         name: 'Run',
         description: '3 km 7:00',
         frequency: 1,
-        count: 365,
+        name_polz: 365,
     },
     {
         name: 'Jump',
         description: '7:00',
         frequency: 1,
-        count: 365,
+        name_polz: 365,
     }
 ]);
 

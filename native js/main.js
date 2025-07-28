@@ -2,7 +2,7 @@ const habit = {
     name: '',
     description: '',
     frequency: undefined,
-    count: undefined,
+    name_polz: undefined,
 }; 
 
 const nameMeta = {
@@ -33,20 +33,20 @@ const descriptionMeta = {
     }
 }
 
-const countMeta = {
-    select: document.querySelector("#count"),
+const name_polzMeta = {
+    select: document.querySelector("#name_polz"),
     handler(ev) {
         if(ev.target.value == undefined){
-            habit.count = 0;
+            habit.name_polz = 0;
         }
         else{
-            habit.count = parseInt(ev.target.value)
+            habit.name_polz = parseInt(ev.target.value)
         }
         setSum()
-        console.log(habit.count) //МБ ОШИБКА
+        console.log(habit.name_polz) //МБ ОШИБКА
     }
 }
-const metaData = [nameMeta, descriptionMeta, frequencyMeta, countMeta];
+const metaData = [nameMeta, descriptionMeta, frequencyMeta, name_polzMeta];
 
 /*
 for(const meta of metaData){

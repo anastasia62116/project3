@@ -15,7 +15,7 @@ const emit =defineEmits({
 <li>
     <div v-text="item.name"></div>
     <div v-text="item.description"></div>
-    <div v-text="item.count"></div>
+    <div v-text="item.name_polz"></div>
     <p>
         <template v-if="item.frequency === 1"> 
             01.09.2025 
