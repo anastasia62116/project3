@@ -48,17 +48,6 @@ const name_polzMeta = {
 }
 const metaData = [nameMeta, descriptionMeta, frequencyMeta, name_polzMeta];
 
-/*
-for(const meta of metaData){
-    if (meta.select && meta.select.tagName.toLowerCase() === "select"){
-        meta.select.addEventListener('change', meta.handler);
-    }
-    else if (meta.select){
-        meta.select.addEventListener('input', meta.handler);  
-    }
-}
-*/
-/**/
 for(const meta of metaData){
     if(meta.select.tagName.toLowerCase() 
         == "select".toLowerCase()){

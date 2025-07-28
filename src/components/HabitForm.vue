@@ -28,7 +28,7 @@ console.log(habit.value);
             <h1>Форма регистрации на мероприятие</h1>
             <form onsubmit="alert('Сохранение'); console.log('foo')">
                 <br/>
-                <div style="text-align: left;"><label for="name_polz">ФИО </label><input id="name_polz" type="number" required v-model.number="habit.name_polz"></input></div><br/>
+                <div style="text-align: left;"><label for="name_polz">ФИО </label><input id="name_polz" name="name_polz" type="text" required v-model.number="habit.name_polz"></input></div><br/>
                 <div style="text-align: left;">
                     <label for="habit-name">Название проекта</label>
                     <input id="habit-name" name="habit-name" type="text" required v-model="habit.name"></input>
